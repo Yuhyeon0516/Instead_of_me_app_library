@@ -1,5 +1,5 @@
+import {Box, Pressable, Text} from "@gluestack-ui/themed";
 import React from "react";
-import {Box, IconButton, Text} from "@yuhyeonkim/native-base";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 
 interface IHeader {
@@ -7,33 +7,33 @@ interface IHeader {
 }
 
 export default function Header({title}: IHeader) {
+    function onPressBackButton() {
+        console.log("press");
+    }
+
     return (
         <Box
-            justifyContent={"center"}
-            h={"50px"}
+            justifyContent="center"
+            h={50}
             w={"100%"}
-            position={"relative"}
-            borderBottomWidth={"0.2px"}>
-            <IconButton
-                icon={
-                    <MaterialIcons
-                        name="arrow-back"
-                        color={"black"}
-                        size={30}
-                    />
-                }
-                size={"2xl"}
-                fontWeight={"bold"}
-                px={"10px"}
-                w={"50px"}
-                h={"50px"}
-                backgroundColor={"red"}
-            />
+            px={10}
+            position="relative"
+            borderBottomColor="$warmGray300"
+            borderBottomWidth={0.5}>
+            <Pressable
+                onPress={onPressBackButton}
+                w={50}
+                h={50}
+                alignItems="center"
+                justifyContent="center">
+                <MaterialIcons name="arrow-back" color={"black"} size={30} />
+            </Pressable>
             <Text
                 position={"absolute"}
-                fontSize={"18px"}
+                fontSize={18}
                 alignSelf={"center"}
-                fontWeight={"bold"}>
+                color="black"
+                fontWeight={"$extrabold"}>
                 {title}
             </Text>
         </Box>
