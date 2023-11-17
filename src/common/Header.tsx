@@ -13,6 +13,7 @@ export default function Header({title}: IHeader) {
 
     return (
         <Box
+            backgroundColor="white"
             justifyContent="center"
             h={50}
             w={"100%"}

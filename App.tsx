@@ -4,7 +4,7 @@ import {config} from "@gluestack-ui/config";
 import {ToastProvider} from "@gluestack-ui/toast";
 import {OverlayProvider} from "@gluestack-ui/overlay";
 import {SafeAreaProvider} from "react-native-safe-area-context";
-import PrivacyPolicy from "./src/privacy_policy";
+import ReivewStatistics from "./src/review_ statistics";
 
 function App(): JSX.Element {
     return (
@@ -12,7 +12,7 @@ function App(): JSX.Element {
             <SafeAreaProvider>
                 <ToastProvider>
                     <OverlayProvider>
-                        <PrivacyPolicy />
+                        <ReivewStatistics />
                     </OverlayProvider>
                 </ToastProvider>
             </SafeAreaProvider>
