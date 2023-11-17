@@ -3,6 +3,7 @@ import Header from "../common/Header";
 import {Box} from "@gluestack-ui/themed";
 import {SafeAreaView, FlatList} from "react-native";
 import Item from "./Item";
+import VerticalSpacer from "../common/VerticalSpacer";
 
 const payList: {title: string; description: string}[] = [
     {
@@ -33,7 +34,9 @@ export default function Payment() {
                             description={item.description}
                         />
                     )}
-                    ItemSeparatorComponent={() => <Box h={20} />}
+                    ItemSeparatorComponent={() => (
+                        <VerticalSpacer height={20} />
+                    )}
                 />
             </Box>
         </SafeAreaView>
