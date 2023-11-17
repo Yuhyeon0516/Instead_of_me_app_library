@@ -23,7 +23,7 @@ export default function ServeyLine({title, percent, isBlack}: IServeyLine) {
                     w={`${percent}%`}
                     h={"$full"}
                     zIndex={-1}
-                    backgroundColor={isBlack ? "$green200" : "$trueGray00"}
+                    backgroundColor={isBlack ? "$green200" : "$trueGray200"}
                 />
             </Box>
             <Text
