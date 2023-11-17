@@ -3,8 +3,8 @@ import {GluestackUIProvider} from "@gluestack-ui/themed";
 import {config} from "@gluestack-ui/config";
 import {ToastProvider} from "@gluestack-ui/toast";
 import {OverlayProvider} from "@gluestack-ui/overlay";
-import CreateReview from "./src/create_review";
 import {SafeAreaProvider} from "react-native-safe-area-context";
+import ReviewList from "./src/review_list";
 
 function App(): JSX.Element {
     return (
@@ -12,7 +12,7 @@ function App(): JSX.Element {
             <SafeAreaProvider>
                 <ToastProvider>
                     <OverlayProvider>
-                        <CreateReview />
+                        <ReviewList />
                     </OverlayProvider>
                 </ToastProvider>
             </SafeAreaProvider>
