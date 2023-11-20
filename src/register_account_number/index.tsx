@@ -1,13 +1,22 @@
-import {SafeAreaView} from "react-native";
+import {KeyboardAvoidingView, Platform, SafeAreaView} from "react-native";
 import React from "react";
 import Header from "../common/Header";
 import VerticalSpacer from "../common/VerticalSpacer";
-import {HStack, Heading, Input, InputField, VStack} from "@gluestack-ui/themed";
+import {
+    Button,
+    ButtonText,
+    HStack,
+    Heading,
+    Input,
+    InputField,
+    VStack,
+} from "@gluestack-ui/themed";
 import BankSelect from "./BankSelect";
+import Expanded from "../common/Expanded";
 
 export default function RegisterAccountNumber() {
     return (
-        <SafeAreaView>
+        <SafeAreaView style={{flex: 1}}>
             <Header title="계좌번호 등록" />
             <VerticalSpacer height={30} />
             <VStack px={20} gap={3}>
@@ -32,6 +41,15 @@ export default function RegisterAccountNumber() {
                     </Input>
                 </VStack>
             </HStack>
+
+            <Expanded />
+
+            <KeyboardAvoidingView
+                behavior={Platform.OS === "ios" ? "padding" : "height"}>
+                <Button size="xl">
+                    <ButtonText>확인</ButtonText>
+                </Button>
+            </KeyboardAvoidingView>
         </SafeAreaView>
     );
 }
