@@ -4,7 +4,7 @@ import {config} from "@gluestack-ui/config";
 import {ToastProvider} from "@gluestack-ui/toast";
 import {OverlayProvider} from "@gluestack-ui/overlay";
 import {SafeAreaProvider} from "react-native-safe-area-context";
-import MakeSuggetion from "./src/make_suggetion";
+import CustomerServiceCenter from "./src/customer_service_center";
 
 function App(): JSX.Element {
     return (
@@ -12,7 +12,7 @@ function App(): JSX.Element {
             <SafeAreaProvider>
                 <ToastProvider>
                     <OverlayProvider>
-                        <MakeSuggetion />
+                        <CustomerServiceCenter />
                     </OverlayProvider>
                 </ToastProvider>
             </SafeAreaProvider>
