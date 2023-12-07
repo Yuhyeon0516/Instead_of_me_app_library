@@ -4,15 +4,15 @@ import {config} from "@gluestack-ui/config";
 import {ToastProvider} from "@gluestack-ui/toast";
 import {OverlayProvider} from "@gluestack-ui/overlay";
 import {SafeAreaProvider} from "react-native-safe-area-context";
-import WritePost from "./src/write_post";
+import PostDetail from "./src/post_detail";
 
 function App(): JSX.Element {
     return (
         <GluestackUIProvider config={config}>
-            <SafeAreaProvider>
+            <SafeAreaProvider style={{backgroundColor: "white"}}>
                 <ToastProvider>
                     <OverlayProvider>
-                        <WritePost />
+                        <PostDetail />
                     </OverlayProvider>
                 </ToastProvider>
             </SafeAreaProvider>
