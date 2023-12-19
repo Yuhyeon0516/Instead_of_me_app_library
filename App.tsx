@@ -4,7 +4,7 @@ import {config} from "@gluestack-ui/config";
 import {ToastProvider} from "@gluestack-ui/toast";
 import {OverlayProvider} from "@gluestack-ui/overlay";
 import {SafeAreaProvider} from "react-native-safe-area-context";
-import InformationGuide from "./src/information_guide";
+import SelectFavoriteType from "./src/select_favorite_type";
 
 function App(): JSX.Element {
     return (
@@ -12,7 +12,7 @@ function App(): JSX.Element {
             <SafeAreaProvider style={{backgroundColor: "white"}}>
                 <ToastProvider>
                     <OverlayProvider>
-                        <InformationGuide />
+                        <SelectFavoriteType />
                     </OverlayProvider>
                 </ToastProvider>
             </SafeAreaProvider>
