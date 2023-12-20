@@ -287,6 +287,9 @@ PODS:
   - react-native-image-picker (7.1.0):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
+  - react-native-pager-view (6.2.3):
+    - RCT-Folly (= 2021.07.22.00)
+    - React-Core
   - react-native-safe-area-context (4.7.4):
     - React-Core
   - React-NativeModulesApple (0.72.7):
@@ -429,6 +432,7 @@ DEPENDENCIES:
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - react-native-date-picker (from `../node_modules/react-native-date-picker`)
   - react-native-image-picker (from `../node_modules/react-native-image-picker`)
+  - react-native-pager-view (from `../node_modules/react-native-pager-view`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
@@ -502,6 +506,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-date-picker"
   react-native-image-picker:
     :path: "../node_modules/react-native-image-picker"
+  react-native-pager-view:
+    :path: "../node_modules/react-native-pager-view"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
   React-NativeModulesApple:
@@ -571,6 +577,7 @@ SPEC CHECKSUMS:
   React-logger: 8edc785c47c8686c7962199a307015e2ce9a0e4f
   react-native-date-picker: 90d1d60802a20085125657940b944f2bb4e5c113
   react-native-image-picker: 5e076db26cd81660cfb6db5bcf517cfa12054d45
+  react-native-pager-view: e26d35e382d86950c936f8917e3beb9188115ccc
   react-native-safe-area-context: 2cd91d532de12acdb0a9cbc8d43ac72a8e4c897c
   React-NativeModulesApple: 6f63747fd6e237b646c61957a8f877a2713617af
   React-perflogger: 31ea61077185eb1428baf60c0db6e2886f141a5a
