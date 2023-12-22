@@ -4,7 +4,7 @@ import {config} from "@gluestack-ui/config";
 import {ToastProvider} from "@gluestack-ui/toast";
 import {OverlayProvider} from "@gluestack-ui/overlay";
 import {SafeAreaProvider} from "react-native-safe-area-context";
-import SearchMarket from "./src/search_market";
+import ModifyMarketInformation from "./src/modify_market_information";
 
 function App(): JSX.Element {
     return (
@@ -12,7 +12,7 @@ function App(): JSX.Element {
             <SafeAreaProvider style={{backgroundColor: "white"}}>
                 <ToastProvider>
                     <OverlayProvider>
-                        <SearchMarket />
+                        <ModifyMarketInformation />
                     </OverlayProvider>
                 </ToastProvider>
             </SafeAreaProvider>
