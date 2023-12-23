@@ -4,7 +4,7 @@ import {config} from "@gluestack-ui/config";
 import {ToastProvider} from "@gluestack-ui/toast";
 import {OverlayProvider} from "@gluestack-ui/overlay";
 import {SafeAreaProvider} from "react-native-safe-area-context";
-import DeliveryStoreDetail from "./src/delivery_store_detail";
+import DeliveryHome from "./src/delivery_home";
 
 function App(): JSX.Element {
     return (
@@ -12,7 +12,7 @@ function App(): JSX.Element {
             <SafeAreaProvider style={{backgroundColor: "white"}}>
                 <ToastProvider>
                     <OverlayProvider>
-                        <DeliveryStoreDetail />
+                        <DeliveryHome />
                     </OverlayProvider>
                 </ToastProvider>
             </SafeAreaProvider>
