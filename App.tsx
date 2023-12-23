@@ -4,7 +4,7 @@ import {config} from "@gluestack-ui/config";
 import {ToastProvider} from "@gluestack-ui/toast";
 import {OverlayProvider} from "@gluestack-ui/overlay";
 import {SafeAreaProvider} from "react-native-safe-area-context";
-import InquirySubmissionReflected from "./src/inquiry_submission_reflected";
+import StatusOfReviewsReceived from "./src/status_of_reviews_received";
 
 function App(): JSX.Element {
     return (
@@ -12,7 +12,7 @@ function App(): JSX.Element {
             <SafeAreaProvider style={{backgroundColor: "white"}}>
                 <ToastProvider>
                     <OverlayProvider>
-                        <InquirySubmissionReflected />
+                        <StatusOfReviewsReceived />
                     </OverlayProvider>
                 </ToastProvider>
             </SafeAreaProvider>
