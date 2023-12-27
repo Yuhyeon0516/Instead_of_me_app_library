@@ -4,7 +4,7 @@ import {config} from "@gluestack-ui/config";
 import {ToastProvider} from "@gluestack-ui/toast";
 import {OverlayProvider} from "@gluestack-ui/overlay";
 import {SafeAreaProvider} from "react-native-safe-area-context";
-import SearchHospitalCategory from "./src/search_hospital_category";
+import IdentityVerification from "./src/identity_verification";
 
 function App(): JSX.Element {
     return (
@@ -12,7 +12,7 @@ function App(): JSX.Element {
             <SafeAreaProvider style={{backgroundColor: "white"}}>
                 <ToastProvider>
                     <OverlayProvider>
-                        <SearchHospitalCategory />
+                        <IdentityVerification />
                     </OverlayProvider>
                 </ToastProvider>
             </SafeAreaProvider>
