@@ -4,7 +4,7 @@ import {config} from "@gluestack-ui/config";
 import {ToastProvider} from "@gluestack-ui/toast";
 import {OverlayProvider} from "@gluestack-ui/overlay";
 import {SafeAreaProvider} from "react-native-safe-area-context";
-import InduceIdentityVerification from "./src/induce_identity_verification";
+import MoodFilter from "./src/mood_filter";
 
 function App(): JSX.Element {
     return (
@@ -12,7 +12,7 @@ function App(): JSX.Element {
             <SafeAreaProvider style={{backgroundColor: "white"}}>
                 <ToastProvider>
                     <OverlayProvider>
-                        <InduceIdentityVerification />
+                        <MoodFilter />
                     </OverlayProvider>
                 </ToastProvider>
             </SafeAreaProvider>
